@@ -21,3 +21,4 @@ Route::post('/todo','ctrller@save');
 Route::get('/todo/edit/{id}','ctrller@edit_form');
 Route::post('/todo/edit','ctrller@edit');
 Route::get('/todo/delete/{id}','ctrller@delete');
+Route::get('/todo/finished','ctrller@finished');

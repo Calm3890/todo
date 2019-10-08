@@ -42,4 +42,8 @@ class ctrller extends Controller
         $this->todorepo->delete($id);
         return redirect('/todo');
     }
+    public function finished(){
+        $todos = $this->todorepo->all();
+        return view('todo.finished',['todos'=>$todos]);
+    }
 }

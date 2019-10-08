@@ -22,6 +22,7 @@
             <div>
                 <tr>
                 <th><input type="button" value="Add" onclick="location.href='/todo/new'"></th>
+                <th><input type="button" value="Finished" onclick="location.href='/todo/finished'"></th>
                 </tr>
             </div>
         </table>
