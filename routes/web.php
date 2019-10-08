@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/todo','ctrller@index');
+Route::get('/todo/new','ctrller@new_form');
+Route::post('/todo','ctrller@save');
+Route::get('/todo/edit/{id}','ctrller@edit_form');
+Route::post('/todo/edit','ctrller@edit');
+Route::get('/todo/delete/{id}','ctrller@delete');
